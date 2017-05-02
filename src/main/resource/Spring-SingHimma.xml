@@ -9,7 +9,17 @@
     	<constructor-arg ref="fadedSong"></constructor-arg>
     </bean>
 
+	
+	<!-- 通过构造器注入对象引用,使用prototype作用域 -->
+    <bean id="xiaoZhi" class="com.spring.SingHimma" scope="prototype">
+    	<constructor-arg value="500"></constructor-arg>
+    	<constructor-arg ref="fadedSong"></constructor-arg>
+    </bean>
+	
 	<bean id="fadedSong" class="com.spring.FadedSong"></bean>
+    
+    
+    
     
 
 </beans>

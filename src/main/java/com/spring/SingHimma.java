@@ -19,7 +19,10 @@ public class SingHimma extends Himma{
 		System.out.println("开始唱歌。。");
 		song.sing();
 	}
-	
 
+	public void setSong(Song song) {
+		this.song = song;
+	}
+	
 	
 }
