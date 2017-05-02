@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
-		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("Spring-WiringBean.xml");
+		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("Spring-Himma.xml");
 		People xiaoming = (People)applicationContext.getBean("xiaoMing");
 		xiaoming.doWorking();
 		
