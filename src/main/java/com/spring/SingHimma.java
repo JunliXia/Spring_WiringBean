@@ -25,4 +25,13 @@ public class SingHimma extends Himma{
 	}
 	
 	
+	public void startWork(){
+		System.out.println("开始上班了");
+	}
+	
+	public void endWork(){
+		System.out.println("下班了");
+	}
+	
+	
 }

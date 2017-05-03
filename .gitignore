@@ -41,3 +41,13 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+target/classes/com/spring/FadedSong.class
+target/classes/com/spring/People.class
+target/classes/com/spring/People.class
+target/classes/META-INF/maven/com.spring/Spring_WiringBean/pom.properties
+target/classes/Spring-Himma.xml
+target/classes/com/spring/Song.class
+target/test-classes/com/spring/SingHimmaTest.class
+*.class
+target/classes/META-INF/maven/com.spring/Spring_WiringBean/pom.properties
+target/classes/Spring-SingHimma.xml

@@ -6,14 +6,6 @@ public class Himma implements People {
 	//默认填5个坑
 	private int pitNum = 5;
 	
-	public int getBrickNum() {
-		return brickNum;
-	}
-
-	public void setBrickNum(int brickNum) {
-		this.brickNum = brickNum;
-	}
-
 	public Himma(){
 		
 	}
@@ -31,4 +23,7 @@ public class Himma implements People {
 		System.out.println("今天搬了"+brickNum+"块砖,还填了"+pitNum+"个坑");
 	}
 
+	
+	
+	
 }

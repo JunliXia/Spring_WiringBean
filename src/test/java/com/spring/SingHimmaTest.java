@@ -16,9 +16,11 @@ public class SingHimmaTest extends TestCase {
 	}
 	
 	@Test
-	public void testXia(){
+	public void testxiaoXia(){
 		People xiaoXia = (People) applicationContext.getBean("xiaoXia");
 		xiaoXia.doWorking();
+		//关闭容器，演示destory-method
+		((ClassPathXmlApplicationContext) applicationContext).close();
 	}
 	
 	@Test
@@ -44,7 +46,6 @@ public class SingHimmaTest extends TestCase {
 		//重新从Spring容器中取得xiaoZhi,发现song没有变化
 		SingHimma xiaoZhi2 = (SingHimma) applicationContext.getBean("xiaoZhi");
 		xiaoZhi2.doWorking();
-		
 		
 	}
 		

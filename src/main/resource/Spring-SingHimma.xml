@@ -4,19 +4,21 @@
    xsi:schemaLocation="http://www.springframework.org/schema/beans 
        http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
     <!-- 通过构造器注入对象引用 -->
-    <bean id="xiaoXia" class="com.spring.SingHimma">
-    	<constructor-arg value="500"></constructor-arg>
-    	<constructor-arg ref="fadedSong"></constructor-arg>
+    <!-- 添加指定的初始化方法和销毁方法 -->
+    <bean id="xiaoXia" class="com.spring.SingHimma" init-method="startWork" destroy-method="endWork">
+        <constructor-arg value="500"></constructor-arg>
+        <constructor-arg ref="fadedSong"></constructor-arg>
+        
     </bean>
 
-	
-	<!-- 通过构造器注入对象引用,使用prototype作用域 -->
+    
+    <!-- 通过构造器注入对象引用,使用prototype作用域 -->
     <bean id="xiaoZhi" class="com.spring.SingHimma" scope="prototype">
-    	<constructor-arg value="500"></constructor-arg>
-    	<constructor-arg ref="fadedSong"></constructor-arg>
+        <constructor-arg value="500"></constructor-arg>
+        <constructor-arg ref="fadedSong"></constructor-arg>
     </bean>
-	
-	<bean id="fadedSong" class="com.spring.FadedSong"></bean>
+    
+    <bean id="fadedSong" class="com.spring.FadedSong"></bean>
     
     
     
