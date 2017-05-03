@@ -3,6 +3,7 @@
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="http://www.springframework.org/schema/beans 
        http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+    
     <!-- 通过构造器注入对象引用 -->
     <!-- 添加指定的初始化方法和销毁方法 -->
     <bean id="xiaoXia" class="com.spring.SingHimma" init-method="startWork" destroy-method="endWork">
@@ -13,10 +14,29 @@
 
     
     <!-- 通过构造器注入对象引用,使用prototype作用域 -->
-    <bean id="xiaoZhi" class="com.spring.SingHimma" scope="prototype">
+    <bean id="xiaoZhi" class="com.spring.SingHimma">
         <constructor-arg value="500"></constructor-arg>
         <constructor-arg ref="fadedSong"></constructor-arg>
     </bean>
+    
+    
+    
+    <!-- 注入bean属性 -->
+    <bean id="xiaoMei" class="com.spring.SingHimma">
+        <!-- 注入简单值 -->
+        <property name="brickNum" value="1000"></property>
+        <property name="pitNum" value="50"></property>
+        <!-- 引入其他Bean -->
+        <property name="song" ref="fadedSong"></property>
+        <!-- 引入内部Bean -->
+        <!--
+        <property name="song">
+            <bean class="com.spring.FadedSong"></bean>
+        </property>
+        -->
+    </bean>
+    
+    
     
     <bean id="fadedSong" class="com.spring.FadedSong"></bean>
     
