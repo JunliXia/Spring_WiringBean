@@ -14,7 +14,6 @@ public class HimmaTeam implements People{
 	private Properties foods;
 	
 	
-	
 	public HimmaTeam(){
 	}
 	

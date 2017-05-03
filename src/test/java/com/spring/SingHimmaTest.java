@@ -45,7 +45,6 @@ public class SingHimmaTest {
 		// 重新从Spring容器中取得xiaoZhi,发现song没有变化
 		SingHimma xiaoZhi2 = (SingHimma) applicationContext.getBean("xiaoZhi");
 		xiaoZhi2.doWorking();
-
 	}
 
 	@Test

@@ -15,7 +15,7 @@ public class SingHimma extends Himma{
 		super(brickNum);
 		this.song = song;
 	}
-	
+
 	@Override
 	public void doWorking() {
 		// TODO Auto-generated method stub
@@ -23,11 +23,10 @@ public class SingHimma extends Himma{
 		System.out.println("开始唱歌。。");
 		song.sing();
 	}
-
+	
 	public void setSong(Song song) {
 		this.song = song;
 	}
-	
 	
 	public void startWork(){
 		System.out.println("开始上班了");
@@ -36,6 +35,5 @@ public class SingHimma extends Himma{
 	public void endWork(){
 		System.out.println("下班了");
 	}
-	
 	
 }
