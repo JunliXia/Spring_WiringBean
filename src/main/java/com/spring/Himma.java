@@ -23,6 +23,25 @@ public class Himma implements People {
 		System.out.println("今天搬了"+brickNum+"块砖,还填了"+pitNum+"个坑");
 	}
 
+	public int getBrickNum() {
+		return brickNum;
+	}
+
+	public void setBrickNum(int brickNum) {
+		this.brickNum = brickNum;
+	}
+
+	public int getPitNum() {
+		return pitNum;
+	}
+
+	public void setPitNum(int pitNum) {
+		this.pitNum = pitNum;
+	}
+	
+	
+	
+
 	
 	
 	

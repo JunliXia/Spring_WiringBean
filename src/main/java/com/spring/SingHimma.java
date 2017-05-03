@@ -3,6 +3,10 @@ package com.spring;
 public class SingHimma extends Himma{
 	private Song song;
 	
+	public SingHimma(){
+		
+	}
+	
 	public SingHimma(Song song){
 		this.song = song;
 	}

@@ -19,6 +19,25 @@
         <constructor-arg ref="fadedSong"></constructor-arg>
     </bean>
     
+    
+    
+    <!-- 注入bean属性 -->
+    <bean id="xiaoMei" class="com.spring.SingHimma">
+    	<!-- 注入简单值 -->
+    	<property name="brickNum" value="1000"></property>
+    	<property name="pitNum" value="50"></property>
+    	<!-- 引入其他Bean -->
+    	<property name="song" ref="fadedSong"></property>
+    	<!-- 引入内部Bean -->
+    	<!--
+    	<property name="song">
+    		<bean class="com.spring.FadedSong"></bean>
+    	</property>
+    	-->
+    </bean>
+    
+    
+    
     <bean id="fadedSong" class="com.spring.FadedSong"></bean>
     
     
