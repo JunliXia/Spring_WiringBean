@@ -9,33 +9,33 @@
     <import resource="Spring-SingHimma.xml"/>    
 
     <bean name="blueTeam" class="com.spring.HimmaTeam">
-    	
-    	<property name="peoples">
-    	<!-- 装配list集合 -->
-    		<list>
-    			<ref bean="xiaoMing"/>
-    			<ref bean="xiaoHong"/>
-    			<ref bean="xiaoMei"/>
-    		</list>
-    	</property>
-    	<!-- 装配map集合 -->
-    	<property name="fruits">
-    		<map>
-    			<entry key="apple" value="苹果"></entry>
-    			<entry key="banana" value="香蕉"></entry>
-    			<entry key="pears" value="梨子"></entry>
-    		</map>
-    	</property>
-    	<!-- 装配properties集合 -->
-    	<property name="foods">
-    		<props>
-    			<prop key="rice">米饭</prop>
-    			<prop key="noodles">面条</prop>
-    			<prop key="bread">面包</prop>
-    		</props>
-    	</property>
-    	
-    	
+        
+        <property name="peoples">
+        <!-- 装配list集合 -->
+            <list>
+                <ref bean="xiaoMing"/>
+                <ref bean="xiaoHong"/>
+                <ref bean="xiaoMei"/>
+            </list>
+        </property>
+        <!-- 装配map集合 -->
+        <property name="fruits">
+            <map>
+                <entry key="apple" value="苹果"></entry>
+                <entry key="banana" value="香蕉"></entry>
+                <entry key="pears" value="梨子"></entry>
+            </map>
+        </property>
+        <!-- 装配properties集合 -->
+        <property name="foods">
+            <props>
+                <prop key="rice">米饭</prop>
+                <prop key="noodles">面条</prop>
+                <prop key="bread">面包</prop>
+            </props>
+        </property>
+        
+        
     </bean>
 
 </beans>

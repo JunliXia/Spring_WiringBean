@@ -26,6 +26,11 @@
         <!-- 注入简单值 -->
         <property name="brickNum" value="1000"></property>
         <property name="pitNum" value="50"></property>
+        
+        <!-- 装配空值 -->
+        <!--
+        <property name="pitNum"><null/></property>
+        -->
         <!-- 引入其他Bean -->
         <property name="song" ref="fadedSong"></property>
         <!-- 引入内部Bean -->
